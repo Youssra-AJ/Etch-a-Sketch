@@ -5,6 +5,8 @@
 //Write a for loop that would repeat the div 16 times (horizontally? Vertically?)
 //You might wanna google this
 
+
+
 for (i = 0; i < 256; i++) {
     const mainDiv = document.querySelector('#container');
 
@@ -13,12 +15,13 @@ for (i = 0; i < 256; i++) {
     gridDiv.style.height = '30px';
     gridDiv.style.width = '30px';
     gridDiv.style.display = 'flex';
-
     mainDiv.appendChild(gridDiv);
+
+applyHoverColor(gridDiv);    
 }
 
-//HOVER EFFECT:
-//Start by making 2 event listners: one for when a div is passed over
-//and the second is when a hovered over div becomes white again
-//The hover effect can be created either by adding a new class to the div
-//or changing the div’s background color using JavaScript.
+function applyHoverColor(gridDiv) {
+    gridDiv.onmouseover = () => {
+        gridDiv.classList.add('color-box');
+    }
+}
