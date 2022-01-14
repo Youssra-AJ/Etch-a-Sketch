@@ -15,3 +15,15 @@
 .color-box {
     background-color: black;
 }
+
+#reset {
+    display: flex;
+    position: relative;
+    bottom: 300px;
+}
+
+#setGrid {
+    display: flex;
+    position: relative;
+    bottom: 270px;
+}
