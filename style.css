@@ -7,9 +7,8 @@
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);
     margin: auto; 
-    
-    
 }
+
 
 .grid-div {
     border: 1px solid black;
@@ -26,7 +25,18 @@
     width: 70px;
     height: 30px;
     text-align: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 2px;
+    color: white;
+    background-color: #0099CC;
     
+}
+
+.btn-container {
+    display: flex;
+    position: relative;
+    margin-left: 130px;
 }
 
 #setGrid {
@@ -38,13 +48,18 @@
 .range-control {
     display: flex;
     position: relative;
-    bottom: 240px;
+    bottom: 245px;
+    margin-left: 100px;
 }
 
-.slide-value {
+.value {
     display: flex;
     position: relative;
-    bottom: 250px;
+    bottom: 270px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 150px;
+    
 }
 
 .cell{

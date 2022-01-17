@@ -1,4 +1,4 @@
-let val = document.querySelector('.range-control').value;
+
 //Create Grid function:
 createGrid = () => {
 for (i = 0; i < 256; i++) {
@@ -36,9 +36,8 @@ gridRanger.addEventListener('input', () => {
             event.target.style.backgroundColor = 'black'; 
         })
         mainDiv.appendChild(div); 
-    
-        
     }
+
 });
 
 //Reset button:
